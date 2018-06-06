@@ -5,6 +5,7 @@
     c. service should be a superclass 
     d. all classifications of the service class will have an object, they will inherit the base functions from the Service class 
     e. ServiceController will call the env helper to differentiate the different type of classes and instantiate accordingly
+    f. the env variable will allow us to distinguish which migration table should be used
 
 
 2. Use Logger helper to generate proper logs when handling 
