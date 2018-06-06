@@ -1,0 +1,2 @@
+1. Run php artisan storage:link to link storage for ImageHandler class
+- see https://laravel.com/docs/5.6/filesystem
