@@ -16,7 +16,10 @@ Route::get('/', function () {
 });
 
 Route::get('/dd', function() {
-//    logger(env('CLASS'));
+
+    $PS = new \App\Services\PhotographyService("wedding photoshoot", "wedding photos", "wedding");
+
+    dd($PS);
 });
 
 

@@ -1,10 +1,8 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+namespace App\Services;
+
+use App\Services\Service;
 
 /**
  * Inherits the name and description of the Service superclass
@@ -14,6 +12,7 @@
 class PhotographyService extends Service {
 
     private $genre;
+    private $workType;
 
     public function __construct($name, $description, $genre) {
         parent::__construct($name, $description);               // equivelent to super in Java
