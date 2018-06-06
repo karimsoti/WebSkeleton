@@ -17,9 +17,11 @@ Route::get('/', function () {
 
 Route::get('/dd', function() {
 
-    $PS = new \App\Services\PhotographyService("wedding photoshoot", "wedding photos", "wedding");
+//    $PS = new \App\Services\PhotographyService("wedding photoshoot", "wedding photos", "wedding");
+//
+//    dd($PS);
 
-    dd($PS);
+    logger('fsdfasdfasdfsdafsdfasdfasdfzsdfa');
 });
 
 
@@ -42,10 +44,10 @@ Route::post('storeImage', 'ImageStoringController@storeImage');
 
 
 /**
- * Service (products) routes
+ * Service (products) routes    
  * Migration and controller functions need to be changed accordingly 
  */
-Route::post('/addService', 'ServiceController@addService');
+Route::get('/addService', 'ServiceController@addService');
 Route::post('/deleteService/{id}', 'ServiceController@deleteService');
 Route::get('/getServices', 'ServiceController@getAllServices');
 Route::get('/getServiceById/{id}', 'ServiceController@getServiceById');
