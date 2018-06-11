@@ -12,10 +12,16 @@ use App\Services\Service;
 class PhotographyService extends Service {
 
     private $genre;
-    private $workType;
 
-    public function __construct($name, $description, $genre) {
-        parent::__construct($name, $description);               // equivelent to super in Java
+    /**
+     * Constructor for the PhotoGraphyService subclass
+     * @param type $name
+     * @param type $description
+     * @param type $genre
+     * @param type $workType
+     */
+    public function __construct($name, $description, $genre, $imageName) {
+        parent::__construct($name, $description, $imageName);               // equivelent to super in Java
         $this->genre = $genre;
     }
 

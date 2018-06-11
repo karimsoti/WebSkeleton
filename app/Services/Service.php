@@ -11,15 +11,17 @@ class Service {
 
     private $serviceName;
     private $serviceDescription;
+    private $imageName;
 
     /**
      * Constructor used to instantiate the Service object.
      * @param type $name
      * @param type $description
      */
-    public function __construct($name, $description) {
+    public function __construct($name, $description, $imageName) {
         $this->serviceName = $name;
         $this->serviceDescription = $description;
+        $this->imageName = $imageName;
     }
 
     /**
@@ -36,6 +38,10 @@ class Service {
      */
     public function getServiceDescription() {
         return $this->serviceDescription;
+    }
+
+    public function getImageName() {
+        return $this->imageName;
     }
 
 }

@@ -14,20 +14,21 @@ class ServiceController extends Controller {
         $siteType = env('APP_CATEGORY');
         switch ($siteType) {
             case "photography":
-                echo "photography";   // create a product 
+                echo "photography";
                 break;
             case "trade":
-                echo "trade";   // create a product 
+                echo "trade";
                 break;
             case "legal":
-                echo "legal";   // create a product 
+                echo "legal";
                 break;
-            case "resume":
-                echo "resume";   // create a product 
+            case "personal":
+                echo "personal";
                 break;
             default:
+                logger('The category specified does not exist');
 
-                abort($code);
+                abort(404, "the category specified does not exist");
         }
     }
 
